@@ -1,0 +1,34 @@
+{
+    "name": "dungeon-keeper",
+    "version": "0.0.0",
+    "description": "A discord bot",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm start",
+        "pretty": "prettier --write \"./**/*.{js,json}\" --tab-width 4 --trailing-comma none --print-width 150",
+        "start": "npm run pretty & sync-dotenv & node index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/owocean/dungeon-keeper.git"
+    },
+    "keywords": [
+        "discord",
+        "bot",
+        "node"
+    ],
+    "author": "owocean",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/owocean/dungeon-keeper/issues"
+    },
+    "homepage": "https://github.com/owocean/dungeon-keeper#readme",
+    "dependencies": {
+        "booru": "^2.4.0",
+        "canvas": "^2.7.0",
+        "discord.js": "^12.5.3",
+        "dotenv": "^8.2.0",
+        "prettier": "^2.2.1",
+        "request": "^2.88.2"
+    }
+}
