@@ -1,4 +1,4 @@
-const fs = require("fs/promises"); // Requiring globals would cause circular dependency
+const fs = require("fs").promises; // Requiring globals would cause circular dependency
 const f = require("fs");
 
 async function init(name) {

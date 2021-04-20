@@ -4,7 +4,7 @@ module.exports = {
     Discord: require("discord.js"),
     env: process.env,
     fs: require("fs"),
-    fsp: require("fs/promises"),
+    fsp: require("fs").promises,
     words: require("./words"),
     storage: require("./storage"),
     color: function () {
