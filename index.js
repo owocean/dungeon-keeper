@@ -22,7 +22,7 @@ let messageCounter = 0;
 let messageThreshold = 0;
 
 client.on("ready", () => {
-    messageThreshold = client.guilds.cache.array().length * 100;
+    messageThreshold = client.guilds.cache.array().length * 50;
     console.log(`Logged in as ${client.user.tag}`);
     client.user.setActivity(g.words.games[Math.floor(Math.random() * g.words.games.length)]);
 });
@@ -39,7 +39,7 @@ client.on("message", async (msg) => {
     if (msg.guild && prefixes[msg.guild.id]) {
         prefix = prefixes[msg.guild.id];
     }
-    if (msg.mentions.has(client.user) && !msg.content.startsWith(prefix)) {
+    if (msg.mentions.has(client.user) && !msg.content.startsWith(prefix) && !msg.mentions.everyone) {
         msg.channel.send("My configured prefix for " + msg.guild.name + " is `" + prefix + "`\nUse `" + prefix + "help` for a list of commands.");
     }
     if (!msg.content.startsWith(prefix)) return;

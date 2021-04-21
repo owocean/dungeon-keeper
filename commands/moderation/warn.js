@@ -7,7 +7,6 @@ module.exports = {
     guildOnly: true,
     async execute(msg, args) {
         if (!msg.member.hasPermission("MANAGE_GUILD")) return;
-        if (!msg.guild.me.hasPermission("MANAGE_GUILD")) return msg.channel.send(g.words.perms);
         let member = msg.mentions.members.first();
         if (member == undefined) return msg.channel.send(g.words.target);
         if (args[0].startsWith("<")) {
