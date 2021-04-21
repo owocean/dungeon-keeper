@@ -39,11 +39,36 @@ let games = [
     "Terraria"
 ];
 
+let ball = [
+    "As I see it, yes",
+    "Ask again later",
+    "Better not tell you now",
+    "Cannot predict now",
+    "Concentrate and ask again",
+    "Don't count on it",
+    "It is certain",
+    "It is decidedly so",
+    "Most likely",
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good",
+    "Outlook good",
+    "Reply hazy, try again",
+    "Signs point to yes",
+    "Very doubtful",
+    "Without a doubt",
+    "Yes",
+    "Yes, definitely",
+    "You may rely on it"
+];
+
 module.exports = {
     games,
+    ball,
     guildOnly: "This action is restricted to guilds only.",
     empty: "Missing required arguments.",
     perms: "I have insufficient permissions to preform this action.",
     target: "Please mention a user to target.",
-    noshow: "Nothing to show."
+    noshow: "Nothing to show.",
+    expression: "Invalid expression"
 };
